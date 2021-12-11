@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.InfoAboutModelController">
+    <children>
+        <Button fx:id="back" layoutX="628.0" layoutY="307.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="72.0" style="-fx-background-color: #FF6666;" text="Назад" textFill="#483838">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+      <TextArea editable="false" layoutY="92.0" prefHeight="120.0" prefWidth="700.0" style="-fx-border-color: #ffffff;" text="B(begin) - это чистые активы в начале рассматриваемого периода.&#10;B(end) - это чистые активы в конце рассматриваемого периода.&#10;r - это коэффициент дисконтирования (принимает значения от 0 до 1).&#10;x - это прибыль за рассматриваемый период.">
+         <font>
+            <Font name="Arial Narrow" size="22.0" />
+         </font>
+      </TextArea>
+      <AnchorPane prefHeight="80.0" prefWidth="700.0" style="-fx-background-color: #FF6666;">
+         <children>
+              <Label layoutX="223.0" layoutY="20.0" prefHeight="39.0" prefWidth="254.0" text="Инструкция расчета" textFill="#483838">
+                  <font>
+                      <Font name="Italic" size="27.0" />
+                  </font>
+              </Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

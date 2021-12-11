@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.EditEmployeeController">
+    <children>
+      <AnchorPane prefHeight="57.0" prefWidth="700.0" style="-fx-background-color: #ffd700;">
+         <children>
+              <Label layoutX="168.0" layoutY="9.0" prefHeight="39.0" prefWidth="363.0" text="Редактирование сотрудника">
+                  <font>
+                      <Font name="Italic" size="27.0" />
+                  </font>
+              </Label>
+         </children>
+      </AnchorPane>
+        <Button fx:id="backToUserEmployee" layoutX="628.0" layoutY="306.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="72.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Назад" textFill="#ff7b00">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+        <TableView fx:id="allEmployeesTable" layoutX="18.0" layoutY="63.0" prefHeight="231.0" prefWidth="496.0" style="-fx-background-color: #EBEED6; -fx-border-color: #000000;">
+            <columns>
+                <TableColumn fx:id="idTab" prefWidth="32.0" text="Id" />
+                <TableColumn fx:id="nameTab" prefWidth="103.19994735717773" text="Имя" />
+                <TableColumn fx:id="surnameTab" prefWidth="131.199951171875" text="Фамилия" />
+            <TableColumn fx:id="departmentTab" prefWidth="116.0" text="Цех" />
+            <TableColumn fx:id="salaryTab" prefWidth="78.39996337890625" text="ЗП" />
+            </columns>
+        </TableView>
+        <Button fx:id="editEmployee" layoutX="534.0" layoutY="255.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Изменить" textFill="#ff7b00">
+            <font>
+                <Font name="Italic" size="15.0" />
+            </font>
+        </Button>
+      <TextField fx:id="fieldName" alignment="CENTER" layoutX="535.0" layoutY="75.0" prefHeight="25.0" prefWidth="146.0" promptText="Имя" />
+      <Label fx:id="labelFull" layoutX="203.0" layoutY="309.0" prefHeight="0.0" prefWidth="146.0" text="Заполните все поля!" textFill="RED" visible="false">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelChooseEmployee" layoutX="248.0" layoutY="309.0" prefHeight="0.0" prefWidth="146.0" text="Выберите сотрудника!" textFill="RED" visible="false">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="filedSurname" alignment="CENTER" layoutX="533.0" layoutY="120.0" promptText="Фамилия" />
+      <TextField fx:id="fieldDepartment" alignment="CENTER" layoutX="533.0" layoutY="165.0" promptText="Цех" />
+      <TextField fx:id="fieldSalary" alignment="CENTER" layoutX="533.0" layoutY="210.0" promptText="ЗП" />
+      <ComboBox fx:id="comboBox" layoutX="18.0" layoutY="305.0" prefWidth="150.0" promptText="idCompany" />
+    </children>
+</AnchorPane>

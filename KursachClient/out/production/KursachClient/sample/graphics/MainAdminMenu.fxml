@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MainAdminMenuController">
+    <children>
+      <AnchorPane prefHeight="69.0" prefWidth="700.0" style="-fx-background-color: #93c47d;">
+         <children>
+              <Label layoutX="204.0" layoutY="5.0" prefHeight="58.0" prefWidth="292.0" text="Меню администратора">
+                  <font>
+                      <Font name="Italic" size="27.0" />
+                  </font>
+              </Label>
+         </children>
+      </AnchorPane>
+        <Button fx:id="signInButtonStart" layoutX="628.0" layoutY="307.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="72.0" style="-fx-background-color: #93c47d;" text="Назад" textFill="WHITE">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+      <Button fx:id="workWithCompany" layoutX="98.0" layoutY="272.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="212.0" style="-fx-background-color: #d0e0e3; -fx-border-color: #1100ff;" text="Работа с предприятиями" textFill="#1100ff">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewAdmins" layoutX="113.0" layoutY="75.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="182.0" style="-fx-background-color: #ffffff; -fx-border-color: #ff0000;" text="Администраторы" textFill="RED">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewUsers" layoutX="413.0" layoutY="75.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="182.0" style="-fx-background-color: #ffffff; -fx-border-color: #ff0000;" text="Пользователи" textFill="RED">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="workWithEmployees" layoutX="406.0" layoutY="272.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="212.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Работа с сотрудниками" textFill="#ff7b00">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="128.0" fitWidth="128.0" layoutX="448.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/employee--128x128.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="128.0" fitWidth="128.0" layoutX="140.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/factory-256x256.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

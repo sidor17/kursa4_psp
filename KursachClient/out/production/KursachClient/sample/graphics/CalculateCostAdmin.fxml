@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.CalculateCostAdminController">
+    <children>
+      <AnchorPane prefHeight="76.0" prefWidth="700.0" style="-fx-background-color: #FF6666;">
+         <children>
+              <Label layoutX="261.0" layoutY="18.0" prefHeight="39.0" prefWidth="178.0" text="Предприятия">
+                  <font>
+                      <Font name="Italic" size="27.0" />
+                  </font>
+              </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="calculateCost" layoutX="452.0" layoutY="145.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="178.0" style="-fx-background-color: #FFC1C1; -fx-border-color: #e5adad;" text="Рассчитать стоимость" textFill="#473838">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+        <TableView fx:id="allCompaniesTable" layoutX="14.0" layoutY="88.0" prefHeight="162.0" prefWidth="372.0" style="-fx-background-color: #EBEED6; -fx-border-color: #000000;">
+            <columns>
+                <TableColumn fx:id="idTab" prefWidth="38.0" text="Id" />
+            <TableColumn fx:id="idOwnerTab" prefWidth="70.0" text="IdOwner" />
+                <TableColumn fx:id="nameTab" prefWidth="118.0" text="Наименование" />
+                <TableColumn fx:id="fieldTab" prefWidth="131.0" text="Сфера деятельности" />
+            </columns>
+        </TableView>
+        <Button fx:id="backToCompanyAdminMenu" layoutX="628.0" layoutY="306.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="72.0" style="-fx-background-color: #FFC1C1; -fx-border-color: #e5adad;" text="Назад" textFill="#473838">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+      <TextField fx:id="bbText" alignment="CENTER" layoutX="49.0" layoutY="260.0" prefHeight="35.0" prefWidth="139.0" promptText="B(begin)">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="beText" alignment="CENTER" layoutX="211.0" layoutY="260.0" prefHeight="42.0" prefWidth="139.0" promptText="B(end)">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="rText" alignment="CENTER" layoutX="369.0" layoutY="260.0" prefHeight="42.0" prefWidth="139.0" promptText="0 &lt; r &lt; 1">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" layoutX="525.0" layoutY="260.0" prefHeight="42.0" prefWidth="139.0" promptText="x" fx:id="xText">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="resultText" alignment="CENTER" editable="false" layoutX="456.0" layoutY="187.0" prefHeight="0.0" prefWidth="170.0" promptText="Результат">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </TextField>
+      <Button fx:id="instructionButton" layoutX="477.0" layoutY="98.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="127.0" style="-fx-background-color: #FFC1C1; -fx-border-color: #e5adad;" text="Инструкция" textFill="#473838">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelFull" layoutX="282.0" layoutY="320.0" prefHeight="16.0" prefWidth="170.0" text="Заполните все ячейки числами!" textFill="RED" visible="false">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelChooseComp" layoutX="280.0" layoutY="320.0" prefHeight="16.0" prefWidth="139.0" text="Выберите предприятие!" textFill="RED" visible="false">
+         <font>
+            <Font name="Impact" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

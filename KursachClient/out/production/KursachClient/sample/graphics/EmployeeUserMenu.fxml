@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.EmployeeUserMenuController">
+    <children>
+      <AnchorPane prefHeight="71.0" prefWidth="700.0" style="-fx-background-color: #ffd700;">
+         <children>
+              <Label alignment="CENTER" layoutX="178.0" layoutY="16.0" prefHeight="35.0" prefWidth="343.0" text="Работа с cотрудниками">
+                  <font>
+                      <Font name="Italic" size="27.0" />
+                  </font>
+              </Label>
+         </children>
+      </AnchorPane>
+        <ImageView layoutX="487.0" layoutY="81.0">
+            <image>
+                <Image url="@../media/employee--128x128.png" />
+            </image>
+        </ImageView>
+      <Button fx:id="viewEmployee" layoutX="84.0" layoutY="110.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="225.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Сотрудники" textFill="#ff7b00">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="addEmployee" layoutX="84.0" layoutY="160.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="225.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Добавить сотрудника" textFill="#ff7b00">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="backToUserMenu" layoutX="628.0" layoutY="307.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="72.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Назад" textFill="#ff7b00">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="editEmployee" layoutX="84.0" layoutY="260.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="225.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Редактировать сотрудника" textFill="#ff7b00">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewDiagram" layoutX="438.0" layoutY="221.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="225.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Диаграмма занятости" textFill="#ff7b00">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteEmployee" layoutX="84.0" layoutY="210.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="225.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Удалить сотрудника" textFill="#ff7b00">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
