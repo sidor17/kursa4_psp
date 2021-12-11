@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AddEmployeeController">
+    <children>
+      <AnchorPane prefHeight="70.0" prefWidth="700.0" style="-fx-background-color: #ffd700;">
+         <children>
+              <Label alignment="CENTER" layoutX="192.0" layoutY="15.0" prefHeight="39.0" prefWidth="315.0" text="Добавление сотрудника">
+                  <font>
+                      <Font name="Italic" size="27.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+              </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="127.0" fitWidth="122.0" layoutX="472.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/employee-128x128.png" />
+         </image>
+      </ImageView>
+        <Button fx:id="backToUserEmployee" layoutX="628.0" layoutY="306.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="72.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Назад" textFill="#ff7b00">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+      <Button fx:id="addEmployee" layoutX="271.0" layoutY="258.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="158.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Добавить" textFill="#ff7b00">
+         <font>
+            <Font name="Italic" size="23.0" />
+         </font>
+      </Button>
+      <Label fx:id="label" layoutX="244.0" layoutY="233.0" text="Сотрудник успешно добавлен!" visible="false">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelFull" layoutX="271.0" layoutY="234.0" prefHeight="18.0" prefWidth="158.0" text="Заполните все ячейки!" textFill="RED" visible="false">
+         <font>
+            <Font name="Impact" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fieldName" alignment="CENTER" layoutX="75.0" layoutY="125.0" prefHeight="26.0" prefWidth="130.0" promptText="Имя сотрудника" />
+      <TextField fx:id="fieldSurname" alignment="CENTER" layoutX="75.0" layoutY="160.0" prefHeight="26.0" prefWidth="130.0" promptText="Фамилия сотрудника" />
+      <TextField fx:id="fieldDepartment" alignment="CENTER" layoutX="75.0" layoutY="195.0" prefHeight="26.0" prefWidth="130.0" promptText="Цех деятельности" />
+      <TextField fx:id="fieldSalary" alignment="CENTER" layoutX="75.0" layoutY="230.0" prefHeight="26.0" prefWidth="130.0" promptText="Заработная плата" />
+      <Label fx:id="labelError" layoutX="61.0" layoutY="274.0" prefHeight="19.0" prefWidth="158.0" text="Неверный формат ввода!" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <ComboBox fx:id="comboBox" layoutX="75.0" layoutY="90.0" prefHeight="26.0" prefWidth="130.0" promptText="Id компании" />
+    </children>
+</AnchorPane>

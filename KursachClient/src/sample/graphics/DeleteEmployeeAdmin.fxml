@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.DeleteEmployeeAdminController">
+    <children>
+        <TableView fx:id="allEmployeeTable" layoutX="14.0" layoutY="71.0" prefHeight="234.0" prefWidth="530.0" style="-fx-background-color: #EBEED6; -fx-border-color: #000000;">
+            <columns>
+                <TableColumn fx:id="idTab" prefWidth="38.0" text="Id" />
+            <TableColumn fx:id="idCompanyTab" prefWidth="82.40003204345703" text="Id компании" />
+                <TableColumn fx:id="nameTab" prefWidth="84.79998779296875" text="Имя" />
+                <TableColumn fx:id="surnameTab" prefWidth="105.5999755859375" text="Фамилия" />
+            <TableColumn fx:id="departmentTab" prefWidth="106.39996337890625" text="Цех" />
+            <TableColumn fx:id="salaryTab" prefWidth="85.59994506835938" text="ЗП" />
+            </columns>
+        </TableView>
+        <Button fx:id="backToEmployeeAdminMenu" layoutX="628.0" layoutY="306.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="72.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Назад" textFill="#ff7b00">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+      <Button fx:id="deleteEmployee" layoutX="583.0" layoutY="243.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="89.0" style="-fx-background-color: #FFEB7F; -fx-border-color: #ff7b00;" text="Удалить" textFill="#ff7b00">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelChooseEmployee" layoutX="150.0" layoutY="305.0" prefHeight="32.0" prefWidth="257.0" text="Выберите сотрудника!" textFill="RED" visible="false">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="61.0" prefWidth="700.0" style="-fx-background-color: #ffd700;">
+         <children>
+              <Label alignment="CENTER" layoutX="204.0" layoutY="11.0" prefHeight="39.0" prefWidth="292.0" text="Удаление сотрудников">
+                  <font>
+                      <Font name="Italic" size="27.0" />
+                  </font>
+              </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="140.0" fitWidth="122.0" layoutX="567.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/employee-del-128x128.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

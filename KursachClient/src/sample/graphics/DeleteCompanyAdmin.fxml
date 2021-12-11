@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.DeleteCompanyAdminController">
+    <children>
+      <AnchorPane prefHeight="79.0" prefWidth="700.0" style="-fx-background-color: #47fed3;">
+         <children>
+              <Label layoutX="201.0" layoutY="20.0" prefHeight="39.0" prefWidth="298.0" text="Удаление предприятий">
+                  <font>
+                      <Font name="Italic" size="27.0" />
+                  </font>
+              </Label>
+         </children>
+      </AnchorPane>
+        <TableView fx:id="allCompaniesTable" layoutX="38.0" layoutY="86.0" prefHeight="218.0" prefWidth="458.0" style="-fx-background-color: #EBEED6; -fx-border-color: #000000;">
+            <columns>
+                <TableColumn fx:id="idTab" prefWidth="38.0" text="Id" />
+            <TableColumn fx:id="idOwnerTab" prefWidth="87.0" text="Id Владельца" />
+                <TableColumn fx:id="nameTab" prefWidth="123.20001220703125" text="Наименование" />
+                <TableColumn fx:id="fieldTab" prefWidth="183.99993896484375" text="Сфера деятельности" />
+            </columns>
+        </TableView>
+        <Button fx:id="backToCompanyAdminMenu" layoutX="628.0" layoutY="306.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="72.0" style="-fx-background-color: #d0e0e3; -fx-border-color: #1100ff;" text="Назад" textFill="#1100ff">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Button>
+      <Button fx:id="deleteCompany" layoutX="537.0" layoutY="244.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="107.0" style="-fx-background-color: #d0e0e3; -fx-border-color: #1100ff;" text="Удалить" textFill="#1100ff">
+         <font>
+            <Font name="Italic" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelChooseComp" layoutX="122.0" layoutY="312.0" prefHeight="32.0" prefWidth="290.0" text="Выберите предприятие!" textFill="RED" visible="false">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="126.0" fitWidth="146.0" layoutX="528.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/factory-256x256.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
